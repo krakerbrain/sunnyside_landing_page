@@ -1,3 +1,5 @@
+@import 'medios';
+
 $primary-soft-red: hsl(7, 99%, 70%);
 $primary-yellow:  hsl(51, 100%, 49%);
 $primary-dark-desaturated-cyan: hsl(167, 40%, 24%);
@@ -64,11 +66,8 @@ a{
     background-color: white;
     margin:  0 auto;
     width:  1440px;
-    height: 800px;
-    background-image: url("../img/desktop/image-header.jpg");
-    background-size: cover;
-    background-repeat:   no-repeat;
-    background-position: center center; ;
+
+
 }
 
 ul{
@@ -96,9 +95,12 @@ ul{
             
 }
 
-
-
   header {
+    background-image: url("../img/desktop/image-header.jpg");
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 700px;
      
     nav{
         
@@ -114,11 +116,54 @@ ul{
     margin-top: 100px;
 }
 
-h1{
+.header-title{
     font-family: $fraunces-font;
     color: $neutral-white;
     letter-spacing: 0.5rem;
     margin-bottom: 100px;
 }
 
+section{
+    .section-text{
+        margin: auto 160px;
+    }
+    display: flex;
+    h1{
+        font-family: $fraunces-font;
+        font-size: 2rem;
+        font-weight: 900;
+        padding-bottom: 10px;
+    }
+    p{
+        color: $neutral-vdark-grayish-blue;
+        line-height: 30px;
+    }
+}
+
+.graphic-design{
+    background-image: url("/public/img/desktop/image-graphic-design.jpg");
+    height: 500px;
+    width: 720px;
+    text-align: center;
+    h3{
+        font-family: $fraunces-font;
+    }
+    p{
+        margin: auto 160px;
+    }
+}
+.photography{
+    background-image: url("/public/img/desktop/image-photography.jpg");
+    height: auto;
+    width: 720px;
+    text-align: center;
+    h3{
+        font-family: $fraunces-font;
+        
+        
+    }
+    p{
+        margin: auto 160px;
+    }
+}
 
