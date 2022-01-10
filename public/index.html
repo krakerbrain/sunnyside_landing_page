@@ -8,11 +8,6 @@
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
   <!--CSS link  -->
   <link rel="stylesheet" href="./css/main.css">
   <!-- FONT FAMILY -->
@@ -23,17 +18,23 @@
 <body>
   <div class="container">
     <header>
-        <nav class="p-2">
+        <nav class="nav">
           <h2>
             <img src="./img/logo.svg" alt="">
           </h2>
-          <ul>
+          <label for="menu" class="nav-label">
+            <img src="/public/img/icon-hamburger.svg" class="nav-img">
+          </label>
+          <input type="checkbox" id="menu" class="nav-input">
+          <ul class="nav-menu">
             <li><a href="">About</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">Projects</a></li>
             <li><a href="" class="contact">CONTACT</a></li>
           </ul>
         </nav>
+
+
         <div class="creatives">
           <h1 class="header-title">WE ARE CREATIVES</h1>
          <img class="arrow" src="./img/icon-arrow-down.svg" alt="">
@@ -41,20 +42,27 @@
     </header>
 
     <section>
+        <div class="mobile-img">
+            <img src="./img/mobile/image-transform.jpg" alt="">
+        </div>
         <div class="section-text">
-            <h1>Transform your brand</h1>
-            <h1>brand</h1>
+            <h1>Transform your 
+              brand</h1>
+           
             <p> We are a full-service creative agency specializing in helping brands grow fast. 
               Engage your clients through compelling visuals that do most of the marketing for you.</p>
             <a href="#">Learn more</a>
         </div>
-        <div>
+        <div class="desktop-img">
             <img src="./img/desktop/image-transform.jpg" alt="">
         </div>
     </section>
     <section>
-        <div>
+        <div class="desktop-img">
             <img src="./img/desktop/image-stand-out.jpg" alt="">
+        </div>
+        <div class="mobile-img">
+            <img src="./img/mobile/image-stand-out.jpg" alt="">
         </div>
         <div class="section-text">
             <h1>Stand out to the right</h1>
@@ -75,42 +83,63 @@
             <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
         </div>
     </section>
-    <section>
-      <h3>Client testimonials</h3>
-      <div>
+    
+    <article>
+      <h3 class="testimonials-title">CLIENT TESTIMONIALS</h3>
+      <div class="clients">
+      <div class="opinion">
         <img src="./img/image-emily.jpg" alt="">
         <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
         <h4>Emily R.</h4>
         <small>Marketing Director</small>
       </div>
-      <div>
+      <div class="opinion">
         <img src="./img/image-thomas.jpg" alt="">
         <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
         <h4>Thomas S.</h4>
-        <small>Chief Operating Officer/small>
+        <small>Chief Operating Officer</small>
       </div>
-      <div>
+      <div class="opinion">
         <img src="./img/image-jennie.jpg" alt="">
         <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
         <h4>Jennie F.</h4>
         <small>Business Owner</small>
       </div>
-    </section>
+    </div>
+    </article>
     <footer>
-      <div>
+      <div class="footer-imgs">
         <img src="./img/desktop/image-gallery-milkbottles.jpg" alt="">
         <img src="./img/desktop/image-gallery-orange.jpg" alt="">
         <img src="./img/desktop/image-gallery-cone.jpg" alt="">
         <img src="./img/desktop/image-gallery-sugarcubes.jpg" alt="">
       </div>
-      <div>
+      <div class="footer-mobile-imgs">
+        <div class="mobile-1">
+          <img src="./img/mobile/image-gallery-milkbottles.jpg" alt="">
+          <img src="./img/mobile/image-gallery-orange.jpg" alt="">
+        </div>
+        <div class="mobile-2">
+          <img src="./img/mobile/image-gallery-cone.jpg" alt="">
+          <img src="./img/mobile/image-gallery-sugar-cubes.jpg" alt="">
+        </div>
+
+      </div>
+      <div class="footer">
+        
         <h2>
-          <img src="./img/logo.svg" alt="">
+          <img class="footer-logo" src="./img/logo.svg" alt="">
         </h2>
         <ul>
           <li><a href="">About</a></li>
           <li><a href="">Services</a></li>
           <li><a href="">Projects</a></li>
+        </ul>
+        <ul class="social">
+          <li><a href=""><img src="./img/icon-facebook.svg" alt=""></a></li>
+          <li><a href=""><img src="./img/icon-instagram.svg" alt=""></a></li>
+          <li><a href=""><img src="./img/icon-twitter.svg" alt=""></a></li>
+          <li><a href=""><img src="./img/icon-pinterest.svg" alt=""></a></li>
         </ul>
 
       </div>

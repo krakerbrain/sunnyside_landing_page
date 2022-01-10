@@ -1,7 +1,150 @@
+@import 'config';
+
 @media (max-width: 375px) {
-    .container{
+
+  .container{
+    width: 375px;
+  }
+    header {
+        background-image: url("../img/mobile/image-header.jpg");
         width:  375px;
-  
+        height: 700px;
+        ul{
+            display: inline-block;
+        }
+    }
+    section{
+        .section-text{
+            margin: 0;
+            padding: 30px 0;
+        }    
+        display: inline-block;
+        text-align: center;
+        h1{
+            font-size: 1rem;
+            white-space: pre-line;
+        }
     
     }
+    .nav-menu, .nav-input{
+        display: none;
+    }
+    .nav-label{
+        display:block;
+        cursor: pointer;
+    }
+    //clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0, 100% 0)
+    // clip-path: polygon(100% 0, 78% 13%, 0 13%, 0 100%, 99% 100%)
+    .nav-menu{
+        
+        position: fixed;
+        top: 40px;
+       
+        background: white;
+        width: 100%;
+        left: 0;
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 80px;
+        flex-direction: column;
+        align-items: center;
+        a{
+            color: $neutral-dark-grayish-blue ;
+            padding: 25px;
+        }
+        transition: clip-path 0.3s ease-out;
+        clip-path: polygon(90% 0, 90% 0, 90% 0, 90% 0, 90% 0)
+    }
+    
+    .nav-input:checked + .nav-menu{
+        clip-path: polygon(90% 100%, 90% 0, 80% 15%, 10% 15%, 10% 100%)
+    }
+    .contact{
+         @include btn($primary-yellow, $font-color);
+                
+    }
+
+.mobile-img{
+    display: block;
+
+    height: auto;
+    img{
+        width: 375px;
+    }
+}
+.desktop-img{
+    display: none;
+}
+.graphic-design{
+    background-image: url("/public/img/mobile/image-graphic-design.jpg");
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    width: 375px;
+   height: 600px;
+   h3{
+    padding-top: 400px;
+    margin: 0;
+}
+}
+// }
+// .gd{
+//     margin-top: 100px
+// }
+.photography{
+    background-image: url("/public/img/mobile/image-photography.jpg");
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    width: 375px;
+   height: 600px;
+   h3{
+    padding-top: 400px;
+    margin-top: 0;
+}
+
+}
+
+article{
+    padding:0;
+    h3{
+       margin: 50px 0;
+
+    }
+  
+}
+.clients{
+    display: inline-block;
+    margin: 15px;
+    p{
+        font-size: 1.2em;
+        padding: 0;
+    }
+}
+.opinion{
+    padding: 30px;
+}
+
+.footer-imgs{
+    display: none;
+}
+.footer-mobile-imgs{
+    display: inline-block;
+}
+.mobile-1{
+    display: flex;
+    width: 375px;
+    img{
+        width: 50%;
+    }
+}
+.mobile-2{
+    display: flex;
+    width: 375px;
+    img{
+        width: 50%;
+    }
+}
+
  }
+ 
